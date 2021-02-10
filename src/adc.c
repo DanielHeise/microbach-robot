@@ -14,24 +14,24 @@
 void init_adc(void)
 {
 /* ADCON0 */
-	ADC = ENABLE;					// Enable the ADC peripheral
-	ANALOG_CH_BIT_3 = SET;			//------------------------------
-	ANALOG_CH_BIT_2 = SET;			// Start with Channel 13
-	ANALOG_CH_BIT_1 = CLEARED;		//     AN13 (pin 21)
-	ANALOG_CH_BIT_0 = SET;			//------------------------------
-	ADC_INPROGRESS = CLEARED;		// Ensure the ADC is doing nothing
+	ADC = ENABLE;                   // Enable the ADC peripheral
+	ANALOG_CH_BIT_3 = SET;          //------------------------------
+	ANALOG_CH_BIT_2 = SET;          // Start with Channel 13
+	ANALOG_CH_BIT_1 = CLEARED;      //     AN13 (pin 21)
+	ANALOG_CH_BIT_0 = SET;          //------------------------------
+	ADC_INPROGRESS = CLEARED;       // Ensure the ADC is doing nothing
 /* ADCON1 */
 	ADC_PREF = AVDD;
 	ADC_NREF = AVSS;
-	AD_PORT_CFG_BIT_3 = CLEARED;	//------------------------------
-	AD_PORT_CFG_BIT_2 = CLEARED;	// Configure the port I/O
-	AD_PORT_CFG_BIT_1 = CLEARED;	// as Analog
-	AD_PORT_CFG_BIT_0 = CLEARED;	//------------------------------
+	AD_PORT_CFG_BIT_3 = CLEARED;    //------------------------------
+	AD_PORT_CFG_BIT_2 = CLEARED;    // Configure the port I/O
+	AD_PORT_CFG_BIT_1 = CLEARED;    // as Analog
+	AD_PORT_CFG_BIT_0 = CLEARED;    //------------------------------
 /* ADCON2 */
-	ADC_RESULT = RIGHT_JUSTIFIED;	// Right justify the ADC result for max resolution
-	AD_CONV_CLK_BIT_2 = SET;		//------------------------------
-	AD_CONV_CLK_BIT_1 = CLEARED;	// ADC Conversion CLK = FOSC/16
-	AD_CONV_CLK_BIT_0 = SET;		//------------------------------
+	ADC_RESULT = RIGHT_JUSTIFIED;   // Right justify the ADC result for max resolution
+	AD_CONV_CLK_BIT_2 = SET;        //------------------------------
+	AD_CONV_CLK_BIT_1 = CLEARED;    // ADC Conversion CLK = FOSC/16
+	AD_CONV_CLK_BIT_0 = SET;        //------------------------------
 /* Configure ADC Interrupt */
 	ADC_INTERRUPT = DISABLE;
 	ADC_PRIORITY = HIGH;
@@ -42,6 +42,6 @@ void init_adc(void)
 	ANALOG_IN_3 = INPUT;
 	ANALOG_IN_4 = INPUT;
 	
-	ADC_RESULT_HIGH = ADC_RESULT_LOW = CLEARED;		// Clear ambiguous data in result registers
+	ADC_RESULT_HIGH = ADC_RESULT_LOW = CLEARED;     // Clear ambiguous data in result registers
 
 } // End init_adc

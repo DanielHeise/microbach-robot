@@ -19,10 +19,9 @@
 /**
 * USART Settings
 */
-#define BAUD			1200								// Baud Rate
-#define baudsetting		((u16_t)(FOSC/(64UL*BAUD)-1))		// Calculates baud value that needs
-															// loaded into the SPBRG register
-
+#define BAUD            1200                                // Baud Rate
+#define baudsetting     ((u16_t)(FOSC/(64UL*BAUD)-1))       // Calculates baud value that needs
+                                                            // loaded into the SPBRG register
 /**
  * PROTOTYPES
  */

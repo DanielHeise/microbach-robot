@@ -6,10 +6,10 @@
  * 
  */
 #include "corrective-action.h"
-#include "sensors.h"				// IRsensor_ptr, etc.
-#include "driver-boards.h"			// PWM_RM_DC
-#include "motors.h"					// LastDirection, odometer, etc.
-#include "mapping.h"				// backtrack_mode, etc.
+#include "sensors.h"
+#include "driver-boards.h"
+#include "motors.h"
+#include "mapping.h"
 
 
 /**

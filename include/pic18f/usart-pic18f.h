@@ -8,7 +8,7 @@
 #ifndef USART_PIC18F_H
 #define USART_PIC18F_H
 
-#define FOSC			8000000L	// Freq of system clock; used for baudsetting calculation
+#define FOSC            8000000L    // Freq of system clock; used for baudsetting calculation
 
 #define TX_REGISTER     TXSTA1
 #define RX_REGISTER     RCSTA1

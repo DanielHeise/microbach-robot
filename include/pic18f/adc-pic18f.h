@@ -8,9 +8,9 @@
 #ifndef ADC_PIC18F_H
 #define ADC_PIC18F_H
 
-#define AVDD				0
-#define AVSS				0
-#define RIGHT_JUSTIFIED		1
+#define AVDD                0
+#define AVSS                0
+#define RIGHT_JUSTIFIED     1
                                             /* ADCON0 */
 #define ANALOG_CH_BIT_3     CHS3            // Analog channel select bits
 #define ANALOG_CH_BIT_2     CHS2
@@ -26,15 +26,15 @@
 #define AD_CONV_CLK_BIT_1   ADCS1
 #define AD_CONV_CLK_BIT_0   ADCS0
 
-#define ADC					ADON			// ADC Enable bit
-#define START_READING		GODONE			// ADC Conversion Status bit
-#define ADC_INPROGRESS		START_READING
-#define ADC_PREF			VCFG1
-#define ADC_NREF			VCFG0
-#define ADC_RESULT			ADFM
-#define ADC_INTERRUPT		ADIE
-#define ADC_PRIORITY		ADIP
-#define ADC_CHANNEL			ADCON0
+#define ADC                 ADON            // ADC Enable bit
+#define START_READING       GODONE          // ADC Conversion Status bit
+#define ADC_INPROGRESS      START_READING
+#define ADC_PREF            VCFG1
+#define ADC_NREF            VCFG0
+#define ADC_RESULT          ADFM
+#define ADC_INTERRUPT       ADIE
+#define ADC_PRIORITY        ADIP
+#define ADC_CHANNEL         ADCON0
 #define ADC_RESULT_HIGH     ADRESH          // A/D Result High Register
 #define ADC_RESULT_LOW      ADRESL          // A/D Result Low Register
 

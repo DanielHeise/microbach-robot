@@ -20,10 +20,10 @@
 * MOTOR Settings
 */
 /* Motor Directions */
-#define LM_REVERSE			1
-#define LM_FORWARD			0
-#define RM_REVERSE			0
-#define RM_FORWARD			1
+#define LM_REVERSE          1
+#define LM_FORWARD          0
+#define RM_REVERSE          0
+#define RM_FORWARD          1
 
 u8_t moving = NO;
 u8_t freq = 0;

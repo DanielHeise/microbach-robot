@@ -7,6 +7,6 @@
     #include "main-pic18f.h"
 #endif
 
-#define MAXTIME 36
+#define MAXTIME     36
 
 #endif // MAIN_H_
